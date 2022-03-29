@@ -1,0 +1,14 @@
+version: '3.9'
+services:
+  react:
+    container_name: react-app
+    build: .
+    volumes:
+      - ./:/react-app
+    ports:
+      - "3080:3000"
+    networks:
+      - react
+    command: "npm start"
+networks:
+  react:
