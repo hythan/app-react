@@ -6,5 +6,5 @@ COPY . .
 
 RUN npm install
 
-EXPOSE 3080
+EXPOSE 3000
 
